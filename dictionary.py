@@ -1,25 +1,33 @@
 rao={
 'name':'ali',
-'roll':121,
-'class':'bscs'
+'class':'bscs',
+ 'roll':'121'
 }
-print(rao)
-print(rao["roll"])
+print(rao['name'])
 
-rao['house']='nishter'
+rao['ali']=('name')
 print(rao)
-del rao["house"]
+
+
+del(rao)['class']
 print(rao)
+
+
 rao.clear()
 print(rao)
 
-rao["class"]="cnn"
-print(rao)
 
-rajpot={
-'rao':'0yxjan',
-'bbsb':'nnnxnx',
-'hdchjdbj':'bhbcsbc'
-}
-print(len(rajpot))
-print(rajpot)
+
+
+country_capital={
+'italy':'rome',
+'pak':'islamabad'
+} 
+
+for country in country_capital:
+   print(country)
+for country in country_capital:
+    capital = country_capital[country]
+    print(capital)
+
+print(len(country_capital))
