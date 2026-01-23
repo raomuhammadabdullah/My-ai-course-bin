@@ -27,7 +27,7 @@ plt.show()
 #customizing the theme further
 sns.set_theme(style='dark',rc={'axes.facecolor':'orange','grid.color':'black'})
 #creating a plot
-sns.lineplot(x='x',y='y',data=record)
+sns.lmplot(x='x',y='y',data=record)
 plt.show()
 
 #loading the data in data frame 
@@ -36,5 +36,20 @@ df=pd.read_csv('pand_practice/startsup.csv',delimiter=',',parse_dates=[3],date_f
 print(df.dtypes)
 head=df.head(100)
 tail=df.tail(50)
+
+sns.set_theme(style='whitegrid')
+h=sns.displot(data=df,x='ID',hue='Valuation ($B)',kind='hist')
+h.figure.suptitle("sns.displot(data=dffilter, x=ID , hue=Valuation ($B),  kind='hist'  )"  )
+h.figure.show()
+
+sns.set_theme(style='white')
+d=sns.FacetGrid(data=df,col='Company',hue='Country')
+h.figure.show()
+
+
+
+
+
+
 
 
