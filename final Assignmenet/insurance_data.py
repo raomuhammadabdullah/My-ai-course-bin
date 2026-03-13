@@ -33,7 +33,7 @@ print(df.corr())
 
 #converting the data into  input and output lables
 X = df[['age','sex','bmi','children','smoker',
-        'region_northeast','region_northwest','region_southeast', 'region_southwest']]
+        'region_northeast','region_northwest','region_southeast','region_southwest']]
 y = df['charges']
 
 #applying the actual Machine learning 
